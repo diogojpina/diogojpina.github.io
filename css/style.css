@@ -336,8 +336,7 @@ figure {
             border: 1px solid #000;
             background: transparent !important; }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-              background: transparent !important;
-              border: 1px solid #000 !important; }
+              background: transparent !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
@@ -445,7 +444,7 @@ body.offcanvas {
     color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
-    bordeR: 1px solid #000;
+    border: 1px solid #000;
     padding: 2px 10px; }
 
 .fancy-collapse-panel .panel-default > .panel-heading {
@@ -1315,7 +1314,7 @@ body.offcanvas {
   cursor: pointer;
   text-decoration: none; }
   .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
-    background: #000; }
+    background: #000 !important; }
   .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
     background: #000; }
   .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
@@ -1326,7 +1325,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
     width: 30px;
     height: 2px;
     color: #000;
@@ -1821,7 +1820,7 @@ figure {
             background: transparent !important; }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
-              border: 1px solid #000 !important; }
+            }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
@@ -1929,7 +1928,7 @@ body.offcanvas {
     color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
-    bordeR: 1px solid #000;
+    border: 1px solid #000;
     padding: 2px 10px; }
 
 .fancy-collapse-panel .panel-default > .panel-heading {
@@ -3049,9 +3048,7 @@ body {
   font-size: 1.7rem;
 }
 
-.timeline-label::after {
-  border-color: transparent #C5C6C7 transparent transparent !important;
-}
+
 
 .project .desc .con h3,
 .project .desc .con h3 a,
@@ -3060,13 +3057,65 @@ body {
   color: #0B0C10;
 }
 
-.timeline-icon {
+/* .timeline-icon {
   background: #C5C6C7!important;
 }
 
 .timeline-icon i {
   color: #0B0C10 !important;
+} */
+
+/* WORK EXPRIENCE */
+.timeline-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.timeline-icon img {
+  width: 100%;
+  border-radius: 50%;
+  border: none;
+}
+
+.timeline-label h2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.timeline-label h2 a:nth-child(3) {
+  color: #66FCF1 !important;
+}
+
+.timeline-label .icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.timeline-label .icon .tag {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #45A29E;
+  color: white !important;
+}
+
+
+/* ACADEMIC EXPERIENCE */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  background: white;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+  margin-top: 2.25rem !important
+}
+
+.timeline-label::after {
+  display: none !important;
+}
+
+/* */
 
 .progress {
   background: #C5C6C7 !important;
@@ -3107,6 +3156,35 @@ body {
 .services .icon2 i {
   color: #66FCF1 !important;
 }
+
+/* MY SPECIALTY */
+.language-logo-container {
+  max-width: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.language-logo-container h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.language-logo-container h3 strong {
+  color: #45A29E !important;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.language-logo-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* */
 
 .panel .panel-heading .panel-title a {
   border: none !important;
@@ -3189,4 +3267,106 @@ body {
 
 .colorlib-footer a {
   color: #66FCF1;
+}
+
+/* PORTFOLIO */
+.portfolio-project-container {
+  background: #45A29E;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portfolio-project-container h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 !important;
+}
+
+.portfolio-project-container h3 a {
+  color: #000;   
+}
+.portfolio-project-container span {
+  display: block;
+  color: #000;
+  font-size: 13px;
+ }
+
+.portfolio-project-container span a {
+  color: #000;
+}
+
+.portfolio-project-container .icon {
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.portfolio-project-container .icon .tag {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white !important;
+  background: linear-gradient(to right, rgb(31, 40, 51), rgb(11, 12, 16));
+}
+
+/* ABOUT ME */
+.about-me-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONFIDENT SKILLS */
+.confident-skills-row {
+  padding: 2rem;
+}
+
+.confident-skills-title::first-letter {
+  color: #45A29E !important;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* BURGER MENU and SIDEBAR */
+.colorlib-nav-toggle {
+  background: rgb(245, 245, 245) !important;
+  border-radius: 0 0 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorlib-aside {
+  background: #0B0C10 !important;
+}
+
+
+@media (max-width: 768px) {
+  .timeline-label h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-specialty-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
 }
